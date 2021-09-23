@@ -1,0 +1,45 @@
+.container {
+  width: 80%;
+  min-height: 70vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imageContainer {
+  width: 50%;
+}
+
+.imageContainer img {
+  width: 100%;
+}
+
+.contentContainer {
+  width: 50%;
+}
+
+.contentContainer h1 {
+  color: #5da5c3;
+  font-size: 40px;
+}
+
+.contentContainer h4,
+.contentContainer p {
+  font-family: Quicksand;
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    width: 90%;
+    display: block;
+  }
+  .imageContainer {
+    width: 100%;
+  }
+
+  .contentContainer {
+    width: 100%;
+    text-align: center;
+  }
+}

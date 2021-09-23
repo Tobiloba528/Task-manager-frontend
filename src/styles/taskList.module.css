@@ -1,0 +1,48 @@
+
+
+.container{
+    min-height: 80vh;
+    font-family: Playfair;
+}
+
+.header{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.table{
+    width: 50%;
+    margin: 0 auto
+}
+
+.tableHead{
+    background: #f7bd76;
+    color: white;
+    /* border-bottom: 5px transparent solid; */
+}
+
+.tableRow{
+    /* border-bottom: 5px transparent solid;
+    background: white; */
+    border-bottom: #f8f8fb solid 10px;
+    border-top: #f8f8fb solid 10px;
+}
+
+
+@media screen and (max-width: 1024px){
+    .table{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .table{
+        width: 90%;
+    }
+    .tableHead{
+        font-size: 15px;
+    }
+    .tableRow{
+        font-size: 12px;
+    }
+}

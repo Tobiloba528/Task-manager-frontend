@@ -1,0 +1,31 @@
+
+.container{
+    width: 80%;
+    min-height: 80vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container p, h2{
+    font-family: Playfair;
+}
+
+.container p{
+    margin-bottom: 20px;
+}
+
+.inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ @media screen and (max-width: 750px) {
+
+    .container{
+        width: 90%;
+    }
+    .inner{
+        display: block;
+    }
+} 

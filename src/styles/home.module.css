@@ -1,0 +1,59 @@
+.home {
+  min-height: 90vh;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home .content {
+}
+
+.home h1 {
+  font-size: 40px;
+  font-family: Playfair;
+}
+
+.home p {
+  font-size: 15px;
+  color: rgb(77, 77, 77);
+}
+
+.home button {
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  background: linear-gradient(
+    90deg,
+    rgba(249, 151, 28, 1) 44%,
+    rgba(237, 109, 35, 1) 100%
+  );
+  color: white;
+}
+
+@media screen and (max-width: 750px) {
+  .home {
+    padding-top: 40px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+  }
+
+  .home h1 {
+    font-size: 30px;
+    font-family: Playfair;
+  }
+
+  .home .content {
+    width: 100%;
+  }
+
+  .lottie{
+    width: 100%;
+    margin: 10px auto 0;
+    overflow: hidden;
+  }
+
+}

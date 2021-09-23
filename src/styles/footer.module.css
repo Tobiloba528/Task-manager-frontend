@@ -1,0 +1,49 @@
+
+.container{
+    background: #f9971c;
+    color: white;
+    min-height: 10vh;
+    font-family: Playfair;
+}
+
+.inner{
+    width: 80%;
+    min-height: 10vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner div{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 12px;
+}
+
+.one p{
+    margin: 0 8px;
+}
+
+
+.two img{
+    width: 80px;
+}
+
+.two p{
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 750px) {
+    .inner{
+        display: block;
+        width: 95%;
+        font-size: 10px;
+    }
+
+    .one p{
+        margin: 0 5px;
+    }
+
+}

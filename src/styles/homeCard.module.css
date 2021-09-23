@@ -1,0 +1,38 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    min-height: 450px;
+    margin: 0 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 1s ease ;
+}
+
+.container h2{
+    font-size: 20px;
+    font-family: Roboto;
+}
+
+.container p{
+    font-family: Playfair;
+    color: rgb(77, 77, 77);
+}
+
+.container:hover{
+    padding-top: 50px;
+    cursor: pointer;
+}
+
+.container img{
+    width: 70%;
+    height: 100px;
+}
+
+@media screen and (max-width: 750px) {
+    .container{
+        margin-bottom: 10px;
+    }
+}
