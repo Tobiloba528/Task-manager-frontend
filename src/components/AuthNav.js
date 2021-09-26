@@ -24,7 +24,7 @@ const AuthNav = (props) => {
     <nav className={styles.nav}>
       <div className={styles.inner}>
         <div className={styles.logo}>
-          <Link to={getUser() ? "/app" : "/"} className={`${styles.link}`} onClick={() => setActive(false)}>
+          <Link to={getUser() ? "/app" : "/"} className={`${styles.link}`}>
             <img src={logo} alt="logo" />
             <span className={styles.logoText} style={{}}>
               Task Manager
@@ -82,12 +82,13 @@ const AuthNav = (props) => {
           <div className="line"></div>
         </div>
       </div>
+
       <div
         className={
           active ? `${styles.navOpen} ${styles.smallNav}` : `${styles.smallNav}`
         }
       >
-        {/* <div className={styles.mobileTop}>
+        <div className={styles.mobileTop}>
           <Link
             to={getUser() ? "/app" : "/"}
             onClick={() => setActive(false)}
@@ -102,7 +103,7 @@ const AuthNav = (props) => {
             onClick={() => setActive(false)}
             className={styles.close}
           />
-        </div> */}
+        </div>
         {!getUser() && (
           <div className={styles.mobileList}>
             <Link
