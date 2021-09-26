@@ -82,7 +82,7 @@ const AuthNav = (props) => {
           <div className="line"></div>
         </div>
       </div>
-      <div
+      {/* <div
         className={
           active ? `${styles.navOpen} ${styles.smallNav}` : `${styles.smallNav}`
         }
@@ -153,7 +153,7 @@ const AuthNav = (props) => {
             </Link>
           </div>
         )}
-      </div>
+      </div> */}
     </nav>
   );
 };
