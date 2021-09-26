@@ -106,24 +106,22 @@
   .smallNav {
     width: 0;
     height: 0;
+    background: #f9971c;
+    height: 100vh;
+    width: 100%;
+    margin-top: -10vh;
     display: block;
     align-items: center;
     position: fixed;
-    margin: 0;
     top: -100%;
     /* top: 0; */
     transition: transform 1s ease;
-
     /* padding-top: 200px; */
     z-index: 10;
   }
 
   .navOpen {
     transform: translateY(100%);
-    background: #f9971c;
-    overflow: hidden;
-    height: 100vh;
-    width: 100%;
   }
 
   .mobileTop {
