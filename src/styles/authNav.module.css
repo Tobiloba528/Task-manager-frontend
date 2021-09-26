@@ -113,15 +113,15 @@
     align-items: center;
     position: fixed;
     margin: 0;
-    top: -120%;
+    top: -100vh;
     transition: transform 1s ease;
-
+    overflow: hidden;
     /* padding-top: 200px; */
     z-index: 10;
   }
 
   .navOpen {
-    transform: translateY(120%);
+    transform: translateY(100vh);
   }
 
   .mobileTop {
