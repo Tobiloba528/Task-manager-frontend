@@ -59,6 +59,9 @@
 
 .smallNav {
   display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 100%;
 }
 
 @media screen and (max-width: 800px) {
