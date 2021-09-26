@@ -126,7 +126,6 @@
     align-items: center;
     color: white;
     font-family: Martel;
-    margin-bottom: 70px;
   }
 
   .mobileTopLink{
@@ -148,8 +147,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 40vh;
+    padding-top: 100px;
     align-items: center;
-    height: 40%;
     text-align: center;
   }
 
