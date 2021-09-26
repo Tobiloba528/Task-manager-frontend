@@ -4,7 +4,7 @@ import Lottie from "react-lottie";
 import taskAnimation from "../assets/lotties/tasks.json";
 import useWindowSize from '../hooks/useWindowSize';
 
-const Home = () => {
+const Home = (props) => {
 
   const { width, height} = useWindowSize();
 
@@ -28,7 +28,7 @@ const Home = () => {
           <br />
           you tasks effective
         </p>
-        <button>Get Started</button>
+        <button onClick={() => props.history.push('/register')}>Get Started</button>
       </div>
       <div className={styles.lottie}>
       <Lottie options={taskOptions} height={400} width={width < 400  ? width / 1.2 : 400} />

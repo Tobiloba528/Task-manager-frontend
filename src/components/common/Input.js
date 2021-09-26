@@ -3,7 +3,7 @@ import React from "react";
 const Input = ({ label, placeholder, type, name, value, handleChange }) => {
   return (
     <div className="form-group" style={{ marginBottom: '40px'}}>
-      <label for={label} style={{ cursor: 'pointer' }}>{label}</label>
+      <label htmlFor={label} style={{ cursor: 'pointer' }}>{label}</label>
       <input
         type={type}
         className="form-control"

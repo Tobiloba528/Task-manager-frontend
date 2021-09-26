@@ -12,7 +12,7 @@
 
 .home h1 {
   font-size: 40px;
-  font-family: Playfair;
+  font-family: Martel;
 }
 
 .home p {
@@ -30,6 +30,11 @@
     rgba(237, 109, 35, 1) 100%
   );
   color: white;
+  transition: all 1s ease;
+}
+
+.home button:hover{
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 750px) {

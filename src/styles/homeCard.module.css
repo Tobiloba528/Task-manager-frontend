@@ -11,9 +11,10 @@
     transition: all 1s ease ;
 }
 
-.container h2{
-    font-size: 20px;
-    font-family: Roboto;
+.container h3{
+    font-size: 15px;
+    font-family: Martel;
+    padding-top: 20px;
 }
 
 .container p{

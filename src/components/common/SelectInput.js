@@ -3,7 +3,7 @@ import React from "react";
 const SelectInput = ({label, value, handleChange, name, options}) => {
   return (
     <div className="form-group" style={{ marginBottom: '40px'}}>
-      <label for="input">{label}</label>
+      <label htmlFor="input">{label}</label>
       <select
         className="custom-select form-control"
         id="input"

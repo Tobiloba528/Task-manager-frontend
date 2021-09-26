@@ -1,13 +1,16 @@
 import React from "react";
 import AuthNav from "../components/AuthNav";
-import { Route, Switch } from "react-router-dom";
+import { getUser } from "../helpers/jwtHelper";
+import { Redirect, Route, Switch } from "react-router-dom";
 import Footer from "../components/Footer";
 import HomePage from "./HomePage";
 import LoginForm from "../components/LoginForm";
 import SignupForm from "../components/SignupForm";
 
 const AuthScreen = () => {
-  return (
+  return getUser() ? (
+    <Redirect to="/app" />
+  ) : (
     <div>
       <AuthNav />
       <Switch>

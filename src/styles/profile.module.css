@@ -6,7 +6,8 @@
 .header {
   text-align: center;
   padding-top: 50px;
-  font-family: Playfair;
+  font-family: Martel;
+  font-size: 18px;
 }
 
 .form {
@@ -36,6 +37,7 @@
 
 .btn {
   border: none;
+  height: 45px;
   color: white;
   padding: 10px;
   border-radius: 5px;

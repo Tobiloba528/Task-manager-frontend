@@ -8,6 +8,8 @@
 .header{
     text-align: center;
     padding-top: 50px;
+    font-family: Martel;
+    font-size: 18px;
 }
 
 .table{
@@ -27,6 +29,33 @@
     border-bottom: #f8f8fb solid 10px;
     border-top: #f8f8fb solid 10px;
 }
+
+.btn {
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #24a54b;;
+  }
+
+  .btn1 {
+    background: #24a54b;;
+  }
+  
+  .btn2 {
+    background:  #fc3939;;
+  }
+
+  .empty{
+      width: 100%;
+      min-height: 30vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+
 
 
 @media screen and (max-width: 1024px){

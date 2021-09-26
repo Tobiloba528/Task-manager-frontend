@@ -6,7 +6,11 @@
     text-align: center;
 }
 
-.container p, h2{
+.container h2{
+    font-family: Martel;
+}
+
+.container p{
     font-family: Playfair;
 }
 
