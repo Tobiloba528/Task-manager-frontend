@@ -59,8 +59,6 @@
 
 .smallNav {
   display: none;
-  width: 0;
-  height: 0;
 }
 
 @media screen and (max-width: 800px) {
@@ -106,13 +104,13 @@
   }
 
   .smallNav {
+    width: 0;
+    height: 0;
     display: block;
     align-items: center;
-    width: 100%;
     position: fixed;
     margin: 0;
     top: -100%;
-    height: 100vh;
     /* top: 0; */
     transition: transform 1s ease;
     background: #f9971c;
@@ -122,9 +120,11 @@
 
   .navOpen {
     transform: translateY(100%);
+    height: 100vh;
+    width: 100%;
   }
 
-  .mobileTop{
+  .mobileTop {
     width: 90%;
     margin: 0 auto;
     height: 10vh;
@@ -135,22 +135,22 @@
     font-family: Martel;
   }
 
-  .mobileTopLink{
+  .mobileTopLink {
     text-decoration: none;
-    color: white
+    color: white;
   }
 
-  .mobileTopLink img{
+  .mobileTopLink img {
     width: 50px;
     margin-right: 10px;
   }
 
-  .close{
+  .close {
     font-size: 30px;
     cursor: pointer;
   }
 
-  .mobileList{
+  .mobileList {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -160,7 +160,6 @@
     text-align: center;
   }
 
-
   .smallLink {
     text-decoration: none;
     color: white;
@@ -169,12 +168,12 @@
     font-weight: bolder;
   }
 
-  .smallLink:hover, .mobileTopLink:hover{
+  .smallLink:hover,
+  .mobileTopLink:hover {
     color: rgb(201, 201, 201);
   }
 
-  .smallLink:active{
+  .smallLink:active {
     color: black;
   }
-
 }
