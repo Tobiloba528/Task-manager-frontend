@@ -113,7 +113,7 @@
     align-items: center;
     position: fixed;
     margin: 0;
-    top: -100%;
+    top: -120%;
     transition: transform 1s ease;
 
     /* padding-top: 200px; */
@@ -121,7 +121,7 @@
   }
 
   .navOpen {
-    transform: translateY(100%);
+    transform: translateY(120%);
   }
 
   .mobileTop {
