@@ -55,7 +55,7 @@ export const loginUser = (data) => {
     });
     axios({
       method: "post",
-      url: `${process.env.REACT_APP_BASEURL}/users/login`,
+      url: `https://omitomo-new-task-manager.herokuapp.com/users/login`,
       data: data,
       headers: {
         "Content-Type": "application/json",
