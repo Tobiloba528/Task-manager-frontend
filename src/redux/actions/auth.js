@@ -12,13 +12,14 @@ export const LOGIN_USER_FAILURE = "LOGIN_USER_FAILURE";
 const baseUrl = process.env.REACT_APP_BASEURL;
 
 export const createUser = (data) => {
+  console.log('consoling....')
   return (dispatch) => {
     dispatch({
       type: CREATE_USER,
     });
     axios({
       method: "post",
-      url: `${baseUrl}/users`,
+      url: `${process.env.REACT_APP_BASEURL}/users`,
       data: data,
       headers: {
         "Content-Type": "application/json",
@@ -54,7 +55,7 @@ export const loginUser = (data) => {
     });
     axios({
       method: "post",
-      url: `${baseUrl}/users/login`,
+      url: `${process.env.REACT_APP_BASEURL}/users/login`,
       data: data,
       headers: {
         "Content-Type": "application/json",

@@ -11,14 +11,18 @@ import { FaRegWindowClose, AiOutlineClose } from "react-icons/all";
 
 const AuthNav = (props) => {
   const [active, setActive] = useState(false);
+  const [user, setUser] = useState({})
 
   const burgerClasses = active
     ? `${styles.burger} ${styles.toggle}`
     : `${styles.burger}`;
 
   useEffect(() => {
-    getUser();
-  }, [props]);
+   const user = props.getMe();
+   setUser(user);
+  }, []);
+
+
 
   return (
     <nav className={styles.nav}>
@@ -136,7 +140,7 @@ const AuthNav = (props) => {
               className={styles.smallLink}
               onClick={() => setActive(false)}
             >
-              {props.user.name ? props.user.name : getUser().name}
+              {user ? user.name : "loading..."}
             </Link>
             <Link
               to="/app/create-task"
