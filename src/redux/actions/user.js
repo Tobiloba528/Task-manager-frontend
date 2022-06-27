@@ -24,7 +24,7 @@ export const getMe = () => {
     dispatch({ type: GET_USER });
     axios({
       method: "get",
-      url: `${baseUrl}/users/me`,
+      url: `https://omitomo-new-task-manager.herokuapp.com/users/me`,
     })
       .then((res) => {
         console.log(res.data);
@@ -42,7 +42,7 @@ export const deleteMe = () => {
     dispatch({ type: DELETE_USER });
     axios({
       method: "delete",
-      url: `${baseUrl}/users/me`,
+      url: `https://omitomo-new-task-manager.herokuapp.com/users/me`,
     })
       .then((res) => {
         console.log(res);
@@ -64,7 +64,7 @@ export const updateMe = (data) => {
     dispatch({ type: UPDATE_USER });
     axios({
       method: "patch",
-      url: `${baseUrl}/users/me`,
+      url: `https://omitomo-new-task-manager.herokuapp.com/users/me`,
       data: data,
     })
       .then((res) => {

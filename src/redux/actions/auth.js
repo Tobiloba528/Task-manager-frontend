@@ -19,7 +19,7 @@ export const createUser = (data) => {
     });
     axios({
       method: "post",
-      url: `${process.env.REACT_APP_BASEURL}/users`,
+      url: `https://omitomo-new-task-manager.herokuapp.com/users`,
       data: data,
       headers: {
         "Content-Type": "application/json",

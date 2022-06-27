@@ -29,7 +29,7 @@ export const getTasks = () => {
 
     axios({
       method: "get",
-      url: `${baseUrl}/tasks`,
+      url: `https://omitomo-new-task-manager.herokuapp.com/tasks`,
     })
       .then((res) => {
         console.log(res);
@@ -48,7 +48,7 @@ export const createTask = (data, history) => {
 
     axios({
       method: "post",
-      url: `${baseUrl}/tasks`,
+      url: `https://omitomo-new-task-manager.herokuapp.com/tasks`,
       data: data,
       headers: {
         "Content-Type": "application/json",
@@ -73,7 +73,7 @@ export const deleteTask = (id) => {
     dispatch({ type: DELETE_TASK });
     axios({
       method: "delete",
-      url: `${baseUrl}/tasks/${id}`,
+      url: `https://omitomo-new-task-manager.herokuapp.com/tasks/${id}`,
     })
       .then((res) => {
         dispatch({ type: DELETE_TASK_SUCCESS });
@@ -91,7 +91,7 @@ export const updateTask = (id, data) => {
     dispatch({ type: UPDATE_TASK });
     axios({
       method: "patch",
-      url: `${baseUrl}/tasks/${id}`,
+      url: `https://omitomo-new-task-manager.herokuapp.com/tasks/${id}`,
       data: data,
     })
       .then((res) => {
